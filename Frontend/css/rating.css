@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--yellow: #C11E5E;
+	--blue: #C11E5E;
+	--blue-d-1: #C11E5E;
+	--light: #F4EDF0;
+	--grey: #AAA;
+	--white: #FFF;
+	--shadow: 8px 8px 30px rgba(0,0,0,.05);
+}
+.main {
+	background: var(--light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 93vh;
+	padding: 1rem;
+}
+.box{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 70vw;
+	height: 400px;
+	border-radius: .75rem;
+	box-shadow: var(--shadow);
+}
+.ordsuces{
+	background: var(--yellow);
+	width:100%;
+	border-radius: .75rem 0 0 .75rem;
+	box-shadow: var(--shadow);
+	padding: 6rem 0;
+}
+.ordsuces h3 {
+	color: var(--white);
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.check{
+	margin:0 40%;
+	border:1px solid var(--light);
+    border-radius: 100%;
+    display: inline-block;
+    padding: 15px;
+	height: 98px;
+    width: 96px;
+}
+.wrapper {
+	border-radius:0 .75rem .75rem 0 ;
+	box-shadow: var(--shadow);
+	background: var(--white);
+	padding: 2rem;
+	width: 100%;
+	text-align: center;
+}
+.wrapper h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2rem;
+	color: var(--yellow);
+	margin-bottom: 2rem;
+}
+.rating .star {
+	cursor: pointer;
+}
+.rating .star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+.rating .star:hover {
+	transform: scale(1.1);
+}
+textarea {
+	width: 100%;
+	background: var(--light);
+	padding: 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: .5rem;
+}
+.btn-group {
+	display: flex;
+	grid-gap: .5rem;
+	align-items: center;
+}
+.btn-group .btn {
+	padding: .75rem 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: .875rem;
+	font-weight: 500;
+}
+.btn-group .btn.submit {
+	background: var(--blue);
+	color: var(--white);
+}
+.btn-group .btn.submit:hover {
+	background: var(--blue-d-1);
+}
+.btn-group .btn.cancel {
+	background: var(--white);
+	color: var(--blue);
+}
+.btn-group .btn.cancel:hover {
+	background: var(--light);
+}

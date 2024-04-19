@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    {{>header}}
+    <div class="container">
+        <div class="progress-bar">
+            <div class="step">
+                <p>
+                    Detail
+                </p>
+                <div class="bullet">
+                    <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>
+                    Menu
+                </p>
+                <div class="bullet">
+                    <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+        </div>
+        <div class="form-outer">
+            <form id="addressDetails" method="post">
+                <div class="page slide-page">
+                    <div class="booking-details">
+                        <div class="heading">
+                            <h1>Catering Service Form</h1>
+                        </div>
+                        <div class="input-fields">
+                            <div class="personal">
+                                <div class="input-container">
+                                    <label for="">Full Name</label><br>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="input-container">
+                                    <label for="">Phone No.</label><br>
+                                    <input type="tel" name="phone_no" id="phone_no">
+                                </div>
+                                <div class="input-container">
+                                    <label for="">Email-ID</label><br>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="other">
+                                <div class="input-container x">
+                                    <label for="">Address</label><br>
+                                    <input type="text" name="address" id="address">
+                                </div>
+                                <div class="input-container y">
+                                    <label for="">City</label><br>
+                                    <input type="text" name="city" id="city">
+                                </div>
+                                <div class="input-container y">
+                                    <label for="">State</label><br>
+                                    <input type="text" name="state" id="state">
+                                </div>
+                                <div class="input-container y">
+                                    <label for="">Pin-Code</label><br>
+                                    <input type="text" name="text" id="pincode">
+                                </div>
+                            </div>
+                            <div class="inform">
+                                <div class="input-container z">
+                                    <label for="">Service</label><br>
+                                    <input type="text" name="service" id="service">
+                                </div>
+                                <div class="input-container z">
+                                    <label for="">Caters</label><br>
+                                    <input type="number" name="caters" id="caters">
+                                </div>
+
+                                <div class="input-container y">
+                                    <label for="">No. of people</label><br>
+                                    <input type="number" name="no_of_people" id="no_of_people">
+                                </div>
+
+                                <div class="input-container z">
+                                    <label for="">Date</label><br>
+                                    <input type="date" name="date" id="date">
+                                </div>
+                                <div class="input-container z">
+                                    <label for="">Shift</label><br>
+                                    <select name="shift" id="shift">
+                                        <option value="none" selected>Select</option>
+                                        <option value="morning">Morning</option>
+                                        <option value="afternoon">Afternoon</option>
+                                        <option value="night">Night</option>
+                                        <option value="all_day">All Day</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="error"></div>
+                        <div class="field btn">
+                            <button class="next" id="next">Next</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="menu">
+                        <div class="products">
+                            <div class="block" id="products">
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="box">
+                                <h2>Selected Items</h2>
+                                <div class="cart-items" id="cart-items">
+
+                                </div>
+                                <div class="cart-total btn">
+                                    <p>
+                                        <span>Per Plate Price</span>
+                                        <span id="per_plate">Rs 0</span>
+                                    </p>
+                                    <p>
+                                        <span>No of people</span>
+                                        <span id="people"></span>
+                                    </p>
+                                    <p>
+                                        <span>Total Price</span>
+                                        <span id="total_price">Rs 0</span>
+                                    </p>
+                                    <p>
+                                        <span>Number of Items</span>
+                                        <span id="item_count">0</span>
+                                    </p>
+                                    {{!-- <button type="button" class="submit sm" id="proceed">Proceed to Checkout</button> --}}
+                                    <button onclick="location.href='/orderDetails'" type="button" class="submit sm"  id="proceed">Proceed to Checkout</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field btns btn">
+                            <button class="prev">Previous</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/detail_form.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/caterer_menu.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <a href="./index.html">BOOK MY CATERING </a>
+                </div>
+            </div>
+            <div class="tags">
+                <span><a href="./caterer_orders.html">ORDERS</a></span>
+                <span><a href="./caterer_services.html">SERVICES</a></span>
+                <span><a href="./caterer_menu.html" id="active">MENU</a></span>
+                <span><a href="/contact.html">CONTACT</a></span>
+            </div>
+            <div class="right">
+                <div class="button">
+                    <a href="./components/login.html">LOGOUT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="add-meal">
+            <div class="input-container">
+                <label for="">Meal</label><br>
+                <select name="shift">
+                    <option value="none" selected>Select</option>
+                    <option value="1">Breakfast</option>
+                    <option value="2">Lunch</option>
+                    <option value="3">Dinner</option>
+                    <option value="4">Snacks</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="">Dish Name</label><br>
+                <input type="text" name="name">
+            </div>
+            <div class="input-container">
+                <label for="">Price</label><br>
+                <input type="number" name="price">
+            </div>
+            <button class="product-add">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <span class="add">Add</span>
+            </button>
+        </div>
+        <h1>Catering Menu</h1>
+        <div class="menu">
+            <div class="products">
+                <div class="block">
+                    <h2>Break Fast</h2>
+                    <div class="product">
+                        <div class="product-info">
+                            <div class="item">
+                                <h3 class="product-name">Sandwich</h3>
+                                <span class="border"></span>
+                                <h4 class="product-price">₹ 120</h4>
+                                <button class="product-remove">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <span class="remove">Remove</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <h2>Break Fast</h2>
+                    <div class="product">
+                        <div class="product-info">
+                            <div class="item">
+                                <h3 class="product-name">Pizza</h3>
+                                <span class="border"></span>
+                                <h4 class="product-price">₹ 200</h4>
+                                <button class="product-remove">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <span class="remove">Remove</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div> <div class="block">
+                    <h2>Break Fast</h2>
+                    <div class="product">
+                        <div class="product-info">
+                            <div class="item">
+                                <h3 class="product-name">Burger</h3>
+                                <span class="border"></span>
+                                <h4 class="product-price">₹ 150</h4>
+                                <button class="product-remove">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <span class="remove">Remove</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <label for="total">Total Items</label>
+            <span></span>
+            <p class="total-item">40</p>
+        </div>
+</body>
+
+</html>

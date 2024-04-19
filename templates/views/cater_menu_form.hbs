@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="./css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./css/caterer_menu.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    {{>cater_header}}
+    <div class="container">
+        <div class="add-meal">
+            <div class="input-container">
+                <label for="">Meal</label><br>
+                <select name="shift" id="meal">
+                    <option value="none" selected>Select</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="">Dish Name</label><br>
+                <input type="text" name="name" id="dish_name">
+            </div>
+            <div class="input-container">
+                <label for="">Price</label><br>
+                <input type="number" name="price" , id="price">
+            </div>
+            
+                <button class="product-add" id="hello">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <span >Add</span>
+                </button>
+            </div>
+        <h1>Catering Menu</h1>
+        <div class="menu" id="menu">
+            <div class="products" id="menubox"></div>
+        </div>
+        <div class="total">
+            <label for="total">Total Items</label>
+            <span></span>
+            <p class="total-item" id="total_item">40</p>
+        </div>
+    </div>
+    <script src="./js/cater_menu_form.js"></script>
+</body>
+
+</html>

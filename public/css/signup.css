@@ -1,0 +1,53 @@
+
+.heading-section{
+    margin-top: 35px;
+    margin-bottom:10px;
+}
+.input-fields{
+    display: grid;
+    grid-template-columns: auto auto; 
+}
+input{
+    border-radius: 5px;
+    text-align: center;  
+    font-size: 14px;
+}
+
+.input-container{
+    margin-top: 20px;
+}
+.input-container label{
+    margin-left: 44px;
+    font-size: 18px;
+}
+.address input{
+    margin-top: 30px;
+    width: 92%;
+}
+.box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.box input{
+    width: 115px;
+    
+}
+.box .input-container{
+    margin-top: 0px;
+}
+button{
+    margin-top: 60px;
+}
+select{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 20px;
+    padding: 10px;
+    border-radius:5px;
+    border: 2px solid;
+    text-align: center;
+    width: 210px;  
+    font-size: 14px;
+}

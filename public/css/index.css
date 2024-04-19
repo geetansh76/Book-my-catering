@@ -1,0 +1,86 @@
+*{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cantainer{
+    display:block;
+}
+
+.filter{
+    width: 100vw;
+    display: grid;
+    grid-template-columns:  auto auto auto auto auto;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+.filter a{
+    color: black;
+    border-right: 1px solid black;
+    margin:20px 0px;
+    padding:10px 100px;
+}
+.containts{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+.card{
+    border:1px solid black;
+    height: 350px;
+    width: 640px;
+    margin-bottom:50px;
+    background-color: #F4EDF0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 20%;
+}
+.box{
+    height: 100%;
+    width: 100%;
+}
+.box img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 15px 15px;
+}
+.box h1{
+    margin:10px 10px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    font-size: 16px
+}
+.item img{
+    height:26px;
+    width:24px;
+    margin: 10px;
+}
+.item-button{
+    grid-column: 1/ span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px 0px;
+}
+button{
+    width: 300px;
+    cursor: pointer;
+    font-size:18px;
+    color:white;
+    padding:10px 40px;
+    border: none;
+    background-color:#C11E5E;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price h1,h2{
+    margin: 0px;
+}

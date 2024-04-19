@@ -1,0 +1,47 @@
+.image-section{
+    background-image: url("../images/5016026.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading-section{
+    text-align: center;
+    margin-top: 70px;
+}
+.profile-pic{
+    position: relative;
+    background-image: url(../image/profile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50px; */
+    margin-top: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.input-field{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.input-container{
+    display: grid;
+    grid-template-rows:auto auto ;
+    margin: 15px;
+}
+.input-container label{
+    text-align: center;
+    font-size: 18px;
+}
+input{
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 11px;
+    width: 210px;  
+    font-size: 14px;
+    margin:8px 0px 0px 0px;
+}
+button{
+    margin-top:55px;
+}

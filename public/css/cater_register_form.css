@@ -1,0 +1,93 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.container{
+    margin:40px 180px;
+    width:60vw;
+    height: 78vh;
+    background-color: #F4EDF0;
+    padding: 40px 120px 0px 120px ;
+    border: none;
+	box-shadow: 2px 5px 10px #C11E5E;
+	transform: scale(1.01);
+}
+h1{
+    display: inline-block;
+    border-bottom: 2px solid black;
+}
+.input-fields{
+    display:grid;
+    margin-bottom: 50px;
+}
+.personal{
+    display: flex;
+    justify-content:space-between;
+}
+.input-container{
+    margin-top:20px;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+input{
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #C11E5E;
+    padding: 0px 10px;
+    font-size: 15px;
+    height: 40px;
+}
+.personal input{
+    width: 200px;
+}
+.other{
+    display:grid;
+    grid-template-rows: auto auto ;
+    grid-template-columns: 40% auto auto auto;
+    justify-content:space-between;
+}
+.inform{
+    display: flex;
+    justify-content:space-between;
+}
+.x input{
+    width: 350px;
+}
+.y input{
+    width: 100px;
+}
+select{
+    padding: 12px;
+    border-radius:5px;
+    border-color: #C11E5E;
+    margin-top:8px;
+    width: 180px;  
+    font-size: 14px;
+}
+.select-img{
+    margin-top:20px;
+}
+.select-button{
+    width:34vw;
+    cursor: pointer;
+    font-size:18px;
+    padding:10px 34px;
+    border: none;
+}
+.add-img,.select-button input{
+    cursor: pointer;
+    font-size:18px;
+    padding:10px 40px;
+    border: 1px solid #C11E5E;
+    background-color: #FFE2EE;
+}
+.form-control-btn{
+    cursor: pointer;
+    color:white;
+    font-size:18px;
+    padding:10px 40px;
+    border: none;
+    background-color: #C11E5E;
+}

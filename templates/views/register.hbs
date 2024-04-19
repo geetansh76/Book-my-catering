@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="innercontainer row">
+            <div class="image-section"><img src="../image/signup_img.jpeg" alt=""></div>
+            <div class="register-section">
+                
+                <div class="heading-section">
+                    <span>Register</span> Form
+                </div>
+
+                <form class="form" action = "/register" method = "post">
+                    <div class="input-fields">
+                        <div class="input-container">
+                            <label for="">Full Name</label><br>
+                            <input type="text" name = "name">
+                        </div>
+                        <div class="input-container">
+                            <label for="">Email-ID</label><br>
+                            <input type="email" name = "email">
+                        </div>
+                        <div class="input-container">
+                            <label for="">User-Type</label><br>
+                            <select name="user_type">
+                                <option value="normal" selected>Normal</option>
+                                <option value="catering">Catering-Service</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Phone No.</label><br>
+                            <input type="tel" name = "mobile_no">
+                        </div>
+                        <div class="input-container">
+                            <label for="">Password</label><br>
+                            <input type="password" name = "password">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Confirm Password</label><br>
+                            <input type="password" name = "cpassword">
+                        </div>
+                    </div>  
+
+                    <div class="input-container address">
+                        <label for="">Permanent Address</label><br>
+                        <input type="text" name = "address">
+                    </div>
+
+                    <div class="box">
+                        <div class="input-container">
+                            <label for="">City</label><br>
+                            <input type="text" name = "city">
+                        </div>
+                        
+                        <div class="input-container">
+                            <label for="">State</label><br>
+                            <input type="text" name = "state">
+                        </div>
+    
+                        <div class="input-container">
+                            <label for="">Zip Code</label><br>
+                            <input type="text" name = "zip_code">
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button type = "submit">Register</button>
+                    </div>
+                </form>
+                <p>Already user? <a href="/login">Sign-In</a></p>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

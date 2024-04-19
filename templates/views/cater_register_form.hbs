@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/cater_register_form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {{>cater_header}}
+    <div class="container">
+        <div class="main">
+            <div class="heading">
+                <h1>Provide Service Form</h1>
+            </div>
+            <form action="/caterRegister" method="post">
+                <div class="input-fields">
+                    <div class="personal">
+                        <div class="input-container">
+                            <label for="">Full Name</label><br>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="input-container">
+                            <label for="">Phone No.</label><br>
+                            <input type="tel" name="mobile_no">
+                        </div>
+                        <div class="input-container">
+                            <label for="">Email-ID</label><br>
+                            <input type="email" name="email">
+                        </div>
+                    </div>
+                    <div class="other">
+                        <div class="input-container x">
+                            <label for="">Address</label><br>
+                            <input type="text" name="address">
+                        </div>
+                        <div class="input-container y">
+                            <label for="">City</label><br>
+                            <input type="text" name="city">
+                        </div>
+                        <div class="input-container y">
+                            <label for="">State</label><br>
+                            <input type="text" name="state">
+                        </div>
+                        <div class="input-container y">
+                            <label for="">Pin-Code</label><br>
+                            <input type="text" name="zip_code">
+                        </div>
+                    </div>
+                    <div class="inform">
+                        <div class="input-container z">
+                            <label for="">Service</label><br>
+                            <input type="text" name="services">
+                        </div>
+                        <div class="input-container z">
+                            <label for="">Caters</label><br>
+                            <input type="number" name="caters">
+                        </div>
+                        <div class="input-container z">
+                            <label for="">Date</label><br>
+                            <input type="date" name="register_date">
+                        </div>
+                        <div class="input-container z">
+                            <label for="">Available</label><br>
+                            <select name="available">
+                                <option value="none" selected>Select</option>
+                                <option value="1">Morning</option>
+                                <option value="2">Afternoon</option>
+                                <option value="3">Night</option>
+                                <option value="other">All Day</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="select-img">
+                        <div>
+                            <label for="img">Select Image:</label>
+                            <input class="select-button" type="file" id="img" name="img" accept="image/*">
+                            <button class="add-img" type="submit" name="get_otp">Add Image</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="form-control-btn" type="submit" name="get_otp">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

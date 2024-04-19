@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/rating.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Form Reviews</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <a href="../index.html">BOOK MY CATERING </a>
+                </div>
+            </div>
+            <div class="tags">
+                <span><a href="../index.html" id="active">CATERING</a></span>
+                <span><a href="./orders.html">ORDERS</a></span>
+                <span><a href="/about.html">ABOUT</a></span>
+                <span><a href="/contact.html">CONTACT</a></span>
+            </div>
+            <div class="right">
+                <div class="nav-button">
+                    <a href="./login.html">LOGOUT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="box">
+            <div class="ordsuces">
+                <div class="check">
+                    <img src="../image/check.png" alt="">
+                </div>
+                <h3>Thank you for your order!</h3>
+            </div>
+            <div class="wrapper">
+                <form action="#">
+                    <h3>Write Your Review</h3>
+                    <div class="rating">
+                        <input type="number" name="rating" hidden>
+                        <i class='bx bx-star star' style="--i: 0;"></i>
+                        <i class='bx bx-star star' style="--i: 1;"></i>
+                        <i class='bx bx-star star' style="--i: 2;"></i>
+                        <i class='bx bx-star star' style="--i: 3;"></i>
+                        <i class='bx bx-star star' style="--i: 4;"></i>
+                    </div>
+                    <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+                    <div class="btn-group">
+                        <button type="submit" class="btn submit">Submit</button>
+                        <button class="btn cancel">Cancel</button>
+                    </div>
+                </form>
+                <script src="../js/rating.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

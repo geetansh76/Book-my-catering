@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Multi Step Form | CodingNepal</title>
+   <link rel="stylesheet" href="../css/nav.css">
+   <link rel="stylesheet" href="../css/details_form.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+   <header>
+      <nav>
+          <div class="left">
+              <div class="logo">
+                  <a href="../index.html">BOOK MY CATERING </a>
+              </div>
+          </div>
+          <div class="tags">
+              <span><a href="../index.html" id="active">CATERING</a></span>
+              <span><a href="./orders.html">ORDERS</a></span>
+              <span><a href="/about.html">ABOUT</a></span>
+              <span><a href="/contact.html">CONTACT</a></span>
+          </div>
+          <div class="right">
+              <div class="nav-button">
+                  <a href="./components/login.html">LOGOUT</a>
+              </div>
+          </div>
+      </nav>
+  </header>
+   <div class="container">
+      <div class="progress-bar">
+         <div class="step">
+            <p>
+               Detail
+            </p>
+            <div class="bullet">
+               <span>1</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               Menu
+            </p>
+            <div class="bullet">
+               <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+      </div>
+      <div class="form-outer">
+         <form action="#">
+            <div class="page slide-page">
+               <div class="booking-details">
+                  <div class="heading">
+                     <h1>Catering Service Form</h1>
+                 </div>
+                  <div class="input-fields">
+                     <div class="personal">
+                        <div class="input-container">
+                           <label for="">Full Name</label><br>
+                           <input type="text" name="full_name">
+                        </div>
+                        <div class="input-container">
+                           <label for="">Phone No.</label><br>
+                           <input type="tel" name="phone_no">
+                        </div>
+                        <div class="input-container">
+                           <label for="">Email-ID</label><br>
+                           <input type="email" name="email">
+                        </div>
+                     </div>
+                     <div class="other">
+                        <div class="input-container x">
+                           <label for="">Address</label><br>
+                           <input type="text" name="address">
+                        </div>
+                        <div class="input-container y">
+                           <label for="">City</label><br>
+                           <input type="text" name="city">
+                        </div>
+                        <div class="input-container y">
+                           <label for="">State</label><br>
+                           <input type="text" name="state">
+                        </div>
+                        <div class="input-container y">
+                           <label for="">Pin-Code</label><br>
+                           <input type="text" name="text">
+                        </div>
+                     </div>
+                     <div class="inform">
+                        <div class="input-container y">
+                           <label for="">Service</label><br>
+                           <input type="text" name="service">
+                        </div>
+                        <div class="input-container y">
+                           <label for="">Caters</label><br>
+                           <input type="number" name="caters">
+                        </div>
+                        <div class="input-container y">
+                           <label for="">No. of people</label><br>
+                           <input type="number" name="no_of_people">
+                        </div>
+                        <div class="input-container z">
+                           <label for="">Date</label><br>
+                           <input type="date" name="caters">
+                        </div>
+                        <div class="input-container z">
+                           <label for="">Shift</label><br>
+                           <select name="shift">
+                              <option value="none" selected>Select</option>
+                              <option value="1">Morning</option>
+                              <option value="2">Afternoon</option>
+                              <option value="3">Night</option>
+                              <option value="other">All Day</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="field btn">
+                     <button class="next">Next</button>
+                  </div>
+               </div>
+            </div>
+            <div class="page">
+               <div class="menu">
+                  <div class="products">
+                      <div class="block" id="products">
+                      <!-- <div class="block" id="products">
+                                        <h2>Break Fast</h2><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Jalebi</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 10</h4>
+                                        <button class="product-add" type="button" onclick="myFunction('add','breakfast',this.id)" id="1">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','breakfast',this.id)" id="1_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Poha</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 30</h4>
+                                        <button class="product-add" type="button" onclick="myFunction('add','breakfast',this.id)" id="2">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','breakfast',this.id)" id="2_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Samosa</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 12</h4>
+                                        <button class="product-add" type="button" onclick="myFunction('add','breakfast',this.id)" id="3">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','breakfast',this.id)" id="3_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Chola</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 20</h4>
+                                        <button class="product-add" type="button" onclick="myFunction('add','breakfast',this.id)" id="4">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','breakfast',this.id)" id="4_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                                        <h2>Lunch</h2><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Jalebi</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 10</h4>
+                                        <button class="product-add" type="button" onclick="myFunction('add','lunch',this.id)" id="5">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','lunch',this.id)" id="5_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Poha</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 30</h4>
+                                        <button class="product-add" type="button" onclick="myFunction('add','lunch',this.id)" id="6">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','lunch',this.id)" id="6_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Samosa</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 12</h4>
+                                        <button class="product-add" type="button" onclick="myFunction('add','lunch',this.id)" id="7">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','lunch',this.id)" id="7_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Chola</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 20</h4>
+                                        <button class="product-add" type="button" onclick="myFunction('add','lunch',this.id)" id="8">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','lunch',this.id)" id="8_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                                        <h2>Dinner</h2><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Jalebi</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 10</h4>
+                                       
+                                        <button class="product-add" type="button" onclick="myFunction('add','dinner',this.id)" id="9">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','dinner',this.id)" id="9_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Poha</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 30</h4>
+                                       
+                                        <button class="product-add" type="button" onclick="myFunction('add','dinner',this.id)" id="10">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','dinner',this.id)" id="10_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Samosa</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 12</h4>
+                                       
+                                        <button class="product-add" type="button" onclick="myFunction('add','dinner',this.id)" id="11">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','dinner',this.id)" id="11_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div><div class="product">
+                                <div class="product-info">
+                                    <div class="item">
+                                        <h3 class="product-name">Chola</h3>
+                                        <span class="border"></span>
+                                        <h4 class="product-price">₹ 20</h4>
+                                       
+                                        <button class="product-add" type="button" onclick="myFunction('add','dinner',this.id)" id="12">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <span class="add">Add</span>
+                                        </button>
+                                        <button class="product-remove none" type="button" onclick="myFunction('remove','dinner',this.id)" id="12_remove">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <span class="remove">Remove</span>
+                                        </button>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        </div>
+                  </div>
+                  <div class="cart">
+                      <div class="box">
+                          <h2>Selected Items</h2>
+                          <div class="cart-items" id="cart-items">
+
+                          </div>
+                          <div class="cart-total btn">
+                              <p>
+                                  <span>Total Price</span>
+                                  <span id="total_price"></span>
+                              </p>
+                              <p>
+                                  <span>Number of Items</span>
+                                  <span id="item_count"></span>
+                              </p>
+                              <!-- <button class="submit sm">Proceed to Checkout</button> -->
+                              <button onclick="location.href='./order_details.html'" type="button">Proceed to Checkout</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="field btns btn">
+                     <button class="prev">Previous</button>
+                  </div>
+              </div>
+            </div>
+         </form>
+      </div>
+   </div>
+   <script src="../js/details-form.js"></script>
+</body>
+
+</html>

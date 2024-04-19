@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <a href="./index.html">BOOK MY CATERING </a>
+                </div>
+            </div>
+            <div class="tags">
+                <span><a href="./index.html" id="active">CATERING</a></span>
+                <span><a href="/services.html">SERVICES</a></span>
+                <span><a href="/about.html">ABOUT</a></span>
+                <span><a href="/contact.html">CONTACT</a></span>
+            </div>
+            <div class="right">
+                <div class="button">
+                    <a href="./components/login.html">LOGOUT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="main">
+            <div class="heading">
+                <h1>Catering Service Form</h1>
+            </div>
+            <form action="/services/data" method="post">
+                <div class="input-fields">
+                    <div class="personal">
+                        <div class="input-container">
+                            <label for="">Full Name</label><br>
+                            <input type="text" name = "name">
+                        </div>
+                        <div class="input-container">
+                            <label for="">Phone No.</label><br>
+                            <input type="tel" name = "mobile_no">
+                        </div>
+                        <div class="input-container">
+                            <label for="">Email-ID</label><br>
+                            <input type="email" name = "email">
+                        </div>
+                    </div>
+                    <div class="other">
+                        <div class="input-container x">
+                            <label for="">Address</label><br>
+                            <input type="text" name = "address">
+                        </div>
+                        <div class="input-container y">
+                            <label for="">City</label><br>
+                            <input type="text" name = "city">
+                        </div>
+                        <div class="input-container y">
+                            <label for="">State</label><br>
+                            <input type="text" name = "state">
+                        </div>
+                        <div class="input-container y">
+                            <label for="">Pin-Code</label><br>
+                            <input type="text" name = "zip_code">
+                        </div>
+                    </div>
+                    <div class="inform">
+                        <div class="input-container z">
+                            <label for="">Service</label><br>
+                            <input type="text" name = "service">
+                        </div>
+                        <div class="input-container z">
+                            <label for="">Caters</label><br>
+                            <input type="number" name = "caters">
+                        </div>
+                        <div class="input-container z">
+                            <label for="">Date</label><br>
+                            <input type="date" name = "date">
+                        </div>
+                        <div class="input-container z">
+                            <label for="">Shift</label><br>
+                            <select name="shift">
+                                <option value="none" selected>Select</option>
+                                <option value="1">Morning</option>
+                                <option value="2">Afternoon</option>
+                                <option value="3">Night</option>
+                                <option value="other">All Day</option>
+                            </select>
+                        </div>
+                    </div>
+                        <!-- <div class="select-img">
+                        <form action="/action_page.php">
+                            <label for="img">Select Image:</label>
+                            <input class="select-button" type="file" id="img" name="img" accept="image/*">
+                            <input class="form-control-img" type="submit">
+                        </form>
+                    </div> -->
+                </div>
+                <input class="form-control-detail" type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
